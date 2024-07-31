@@ -13,14 +13,14 @@ let loading = document.createElement('td');
 
 loading.innerHTML = "Loading..."
 loadingRow.appendChild(loading)
-loadingRow.setAttribute('id', 'loadingRow');
+loadingRow.setAttribute('id', 'loading');
 tbody.appendChild(loadingRow);
 
 
 const promises = [createPromise(1), createPromise(2), createPromise(3)];
 Promise.all(promises).then(results => {
     // Remove the loading row
-    const loadingRow = document.getElementById('loadingRow');
+    const loadingRow = document.getElementById('loading');
     loadingRow.parentNode.removeChild(loadingRow);
 
     // Calculate total time
