@@ -33,7 +33,7 @@ Promise.all(promises).then(results => {
     results.forEach(result => {
         const row = document.createElement('tr');
         row.innerHTML = `
-                    <td>Promise - ${result.id}</td>
+                    <td>promises - ${result.id}</td>
                     <td>${result.time}</td>
                 `;
         tbody.appendChild(row);
